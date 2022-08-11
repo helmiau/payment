@@ -12,9 +12,10 @@
 	<link rel="icon" type="image/png" sizes="512x512" href="assets/img/og-512.png">
 	<link rel="stylesheet" href="assets/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/styles.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
-<div class="col text-center tcolor mx-auto" style="height: 100Vh;max-width: 100Vw;">
+<div class="col text-center tcolor mx-auto" style="height: 100Vh;max-width: 500px;">
 <div class="d-flex justify-content-center mt-5"><img class="w-100" src="assets/img/img-main.svg" alt="main-image" loading="lazy" style="max-height: 40vh;"></div>
 <div class="d-flex justify-content-center my-3" lang="id">
 	<center>
@@ -308,28 +309,62 @@
 	<!-- Akhir Daftar Harga-->
 </div>
 
-<br>
-	<h5 class="my-2"><strong>Kontak Pemesanan</strong></h5>
-	<div class="form-row">
-		<div class="form-group col-md-6">
-			<button class="btn btn-success btn-lg btn-block" type="button" onclick="window.open('https://wa.me/6285852222724','_blank')">WhatsApp</button>
-		</div>
-		<div class="form-group col-md-6">
-			<button class="btn btn-primary btn-lg btn-block" type="button" onclick="window.open('https://t.me/helmiau','_blank')">Telegram</button>
-		</div>
+
+	<h5 class="my-2"><strong>Konfirmasi Pembayaran</strong></h5>
+	<div class="mt-4 text-center mx-auto" >
+		<a class="btn btn-dark btn-block btn-lg" target="_blank" href="index.html">
+		<i class="fas fa-store"></i>&nbsp;Halaman Pembayaran</a>
+		<br>
+		<a class="btn btn-success btn-block btn-lg" target="_blank" href="https://wa.me/6285852222724">
+		<i class="fab fa-whatsapp"></i>&nbsp;Via WhatsApp</a>
+		<br>
+		<a class="btn btn-primary btn-block btn-lg" target="_blank" href="https://t.me/helmiau">
+		<i class="fab fa-telegram"></i>&nbsp;Via Telegram</a>
 	</div>
-<br>
-	<h5 class="my-2"><strong>Halaman Lain</strong></h5>
-	<div class="form-row">
-		<div class="form-group col-md-6">
-			<button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.open('index.html')">Halaman Pembayaran</button>
-		</div>
-		<div class="form-group col-md-6">
-			<button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.open('https://helmiau.com')">Situs Web & Blog</button>
-		</div>
+	<br>
+	<h5 class="my-2"><strong>Lainnya</strong></h5>
+	<div class="mt-4 text-center mx-auto" >
+		<a class="btn btn-dark btn-block btn-lg" target="_blank" href="https://helmiau.com">
+		<i class="fab fa-safari"></i>&nbsp;Situs Web & Blog</a>
+		<br>
+		<button id="bagikan_helmiau" class="btn btn-dark btn-block btn-lg">
+		<i class="fas fa-share-square"></i>&nbsp;Bagikan Halaman Ini</a>
 	</div>
+    <script>
+        document.querySelector('#bagikan_helmiau')
+        .addEventListener('click', event => {
+  
+            // Fallback, Tries to use API only
+            // if navigator.share function is
+            // available.
+			// This API only support HTTPS !!!
+            if (navigator.share) {
+                navigator.share({
+  
+                    // Judul Yang Di Share
+                    title: document.title,
+					text: "Kunjungi Situs Pembayaran Helmi Amirudin di " + window.location.href + " yaa, Terima kasih! ",
+                    // url: window.location.href + " Terima kasih!. ",
+					
+                }).then(() => {
+                    console.log('Terima kasih sudah berbagi!');
+                }).catch(err => {
+  
+                    // Handle errors, if occured
+                    console.log(
+                    "Terjadi kesalahan ketika menggunakan Web API:");
+                    console.log(err);
+                });
+            } else {
+  
+                // Alerts user if API not available 
+                alert("Gunakan HTTPS, atau browser browser lain.");
+            }
+        })
+    </script>
 <br>
-<p class="text-center">Copyright by  <a href="http://www.helmiau.com">Helmi Amirudin</a> ® 2021 🤝</p>
+
+<p class="text-center">Copyright by  <a href="http://www.helmiau.com">Helmi Amirudin</a> ® 2022 🤝</p>
 <br>
 </div>
 <script src="assets/jquery.min.js"></script>

@@ -12,10 +12,11 @@
 	<link rel="icon" type="image/png" sizes="512x512" href="assets/img/og-512.png">
 	<link rel="stylesheet" href="assets/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/styles.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 </head>
 <body>
-<div class="col text-center tcolor mx-auto" style="height: 100Vh;max-width: 1300px;">
-<div class="d-flex justify-content-center mt-5"><img class="w-100" src="assets/img/img-main.svg" alt="main-image" loading="lazy" style="max-height: 40vh;"></div>
+<div class="col text-center tcolor mx-auto" style="height: 100Vh;max-width: 500px;">
+<div class="d-flex justify-content-center mt-5"><img class="w-100" src="assets/img/img-main.svg" alt="main-image" loading="lazy" style="max-height: 30vh;"></div>
 <div class="d-flex justify-content-center my-3" lang="en">
 	<center>
 		<a class="btn disabled text-black-50" role="button" aria-label="en-btn">English</a>
@@ -27,53 +28,54 @@
 	<h5 class="my-2"><strong>Welcome to Helmi's Payment Portal</strong></h5>
 </div>
 <div class="text-center d-flex d-xl-flex justify-content-center justify-content-xl-center">
-	<p class="text-center d-xl-flex justify-content-xl-center w-75">Want to support us? or pay our service? If yes, click icon below to choose payment methode.<br> Thank you !.</p>
+	<p class="text-center d-xl-flex justify-content-xl-center w-75">Want to support? pay a service?<br>Click icon below to choose payment method.<br> Thank you !.</p>
 </div>
-<!-- <p class="text-center justify-content-xl-center mt-4"><strong>Klik Salah Satu Metode Pembayaran dibawah ini</strong></p> -->
+
+<h5 class="align-items-center mt-2"><strong>Select Payment Method</strong></h5>
 <div class="d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-md-center justify-content-lg-center justify-content-xl-center mt-3">
-<div class="form-row mx-2" style="max-width: 614px;">
+<div class="form-row mx-2" style="max-width: 500px;">
 	<!--
 	<div class="col">
-	<a id="btn-qris" href="#">
+	<a id="btn-qris">
 	<div><img src="assets/img/img-qris.svg" alt="bca"></div>
 	<p class="tcolor">QRIS</p>
 	</a>
 	</div>
 	-->
 	<div class="col">
-	<a id="btn-bca" href="#">
+	<a id="btn-bca">
 	<div><img src="assets/img/img-bca.svg" alt="bca"></div>
 	<p class="tcolor">BCA/QRIS</p>
 	</a>
 	</div>
 	<div class="col">
-	<a id="btn-jenius" href="#">
+	<a id="btn-jenius">
 	<div><img src="assets/img/img-jenius.svg" alt="jenius"></div>
 	<p class="tcolor">BTPN/Jenius</p>
 	</a>
 	</div>
 	<!--
 	<div class="col">
-	<a id="btn-dana" href="#">
+	<a id="btn-dana">
 	<div><img src="assets/img/img-dana.svg" alt="dana"></div>
 	<p class="tcolor">Dana</p>
 	</a>
 	</div>
 	-->
 	<div class="col">
-	<a id="btn-ovo" href="#">
+	<a id="btn-ovo">
 	<div><img src="assets/img/img-ovo.svg" alt="ovo"></div>
 	<p class="tcolor">OVO</p>
 	</a>
 	</div>
 	<div class="col">
-	<a id="btn-shopeepay" href="#">
+	<a id="btn-shopeepay">
 	<div><img src="assets/img/img-shopeepay.svg" alt="shopeepay"></div>
 	<p class="tcolor">ShopeePay</p>
 	</a>
 	</div>
 	<div class="col">
-	<a id="btn-paypal" href="#">
+	<a id="btn-paypal">
 	<div><img src="assets/img/img-paypal.svg" alt="paypal"></div>
 	<p class="tcolor">Paypal</p>
 	</a>
@@ -81,29 +83,61 @@
 </div>
 </div>
 
-<br>
 	<h5 class="my-2"><strong>Payment Confirmation</strong></h5>
-	<div class="form-row">
-		<div class="form-group col-md-6">
-			<button class="btn btn-success btn-lg btn-block" type="button" onclick="window.open('https://wa.me/6285852222724','_blank')">Via WhatsApp</button>
-		</div>
-		<div class="form-group col-md-6">
-			<button class="btn btn-primary btn-lg btn-block" type="button" onclick="window.open('https://t.me/helmiau','_blank')">Via Telegram</button>
-		</div>
+	<div class="mt-4 text-center mx-auto" >
+		<a class="btn btn-success btn-block btn-lg" target="_blank" href="https://wa.me/6285852222724">
+		<i class="fab fa-whatsapp"></i>&nbsp;Via WhatsApp</a>
+		<br>
+		<a class="btn btn-primary btn-block btn-lg" target="_blank" href="https://t.me/helmiau">
+		<i class="fab fa-telegram"></i>&nbsp;Via Telegram</a>
 	</div>
-<br>
+	<br>
 	<h5 class="my-2"><strong>Others</strong></h5>
-	<div class="form-row">
-		<div class="form-group col-md-6">
-			<button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.open('jasa.html')">Open Services Panel</button>
-		</div>
-		<div class="form-group col-md-6">
-			<button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.open('https://helmiau.com')">Website & Blog</button>
-		</div>
-	</div>													 
+	<div class="mt-4 text-center mx-auto" >
+		<a class="btn btn-dark btn-block btn-lg" target="_blank" href="jasa.html">
+		<i class="fas fa-store"></i>&nbsp;Open Services Panel</a>
+		<br>
+		<a class="btn btn-dark btn-block btn-lg" target="_blank" href="https://helmiau.com">
+		<i class="fab fa-safari"></i>&nbsp;Website & Blog</a>
+		<br>
+		<button id="bagikan_helmiau" class="btn btn-dark btn-block btn-lg">
+		<i class="fas fa-share-square"></i>&nbsp;Share This Page</a>
+	</div>
+    <script>
+        document.querySelector('#bagikan_helmiau')
+        .addEventListener('click', event => {
+  
+            // Fallback, Tries to use API only
+            // if navigator.share function is
+            // available.
+			// This API only support HTTPS !!!
+            if (navigator.share) {
+                navigator.share({
+  
+                    // Judul Yang Di Share
+                    title: document.title,
+					text: "Visit Helmi Amirudin payment site at " + window.location.href + " , Thank you! ",
+                    // url: window.location.href + " Terima kasih!. ",
+					
+                }).then(() => {
+                    console.log('Thank you for sharing!');
+                }).catch(err => {
+  
+                    // Handle errors, if occured
+                    console.log(
+                    "An error occured when using Web API:");
+                    console.log(err);
+                });
+            } else {
+  
+                // Alerts user if API not available 
+                alert("Use HTTPS, or another browser.");
+            }
+        })
+    </script>
 <br>
 
-<p class="text-center">Copyright by  <a href="http://www.helmiau.com">Helmi Amirudin</a> ® 2021 🤝</p>
+<p class="text-center">Copyright by  <a href="http://www.helmiau.com">Helmi Amirudin</a> ® 2022 🤝</p>
 <br>
 </div>
 <!--
