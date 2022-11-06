@@ -33,7 +33,7 @@
 
 <h5 class="align-items-center mt-2"><strong>Select Payment Method</strong></h5>
 <div class="d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-md-center justify-content-lg-center justify-content-xl-center mt-3">
-<div class="form-row mx-2" style="max-width: 500px;">
+<div class="form-row mx-2" style="max-width: 300px;">
 	<!--
 	<div class="col">
 	<a id="btn-qris">
@@ -78,6 +78,12 @@
 	<a id="btn-paypal">
 	<div><img src="assets/img/img-paypal.svg" alt="paypal"></div>
 	<p class="tcolor">Paypal</p>
+	</a>
+	</div>
+	<div class="col">
+	<a id="btn-flip">
+	<div><img src="assets/img/img-flip.svg" alt="flip"></div>
+	<p class="tcolor">Flip</p>
 	</a>
 	</div>
 </div>
@@ -165,9 +171,7 @@
 	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via BCA/QRIS</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
 	<div class="modal-body">
 	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="assets/img/qr-bca.svg"></div>
-	<!--
 	<p class="text-center mx-auto"><strong>4640041710 a.n Helmi Amirudin</strong></p>
-	-->
 	</div>
 	<div class="modal-footer">
 		<button class="btn btn-primary" type="button" onclick="SalinAku('4640041710')">Copy Number</button>
@@ -183,9 +187,7 @@
 	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via Jenius/BTPN</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
 	<div class="modal-body">
 	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="assets/img/img-jenius.svg"></div>
-	<!--
 	<p class="text-center mx-auto"><strong>90370026872 a.n Helmi Amirudin</strong></p>
-	-->
 	</div>
 	<div class="modal-footer">
 		<button class="btn btn-primary" type="button" onclick="SalinAku('$helmiau')">Cashtag</button>
@@ -206,7 +208,7 @@
 	<p class="text-center mx-auto"><strong>085852222724 a.n Helmi Amirudin</strong></p>
 	</div>
 	<div class="modal-footer">
-		<button class="btn btn-primary" type="button" onclick="SalinAku('085852222724')">Salin Nomor</button>
+		<button class="btn btn-primary" type="button" onclick="SalinAku('085852222724')">Copy Number</button>
 		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
 	</div>
 	</div>
@@ -220,9 +222,7 @@
 	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via OVO</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
 	<div class="modal-body">
 	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="assets/img/qr-ovo.svg"></div>
-	<!--
 	<p class="text-center mx-auto"><strong>085852222724 a.n Helmi Amirudin</strong></p>
-	-->
 	</div>
 	<div class="modal-footer">
 		<button class="btn btn-primary" type="button" onclick="SalinAku('085852222724')">Copy Number</button>
@@ -272,14 +272,12 @@
 	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via ShopeePay</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
 	<div class="modal-body">
 	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="w-75 h-75" src="assets/img/qr-shopeepay.svg"></div>
-	<!--
 	<p class="text-center mx-auto"><strong>085852222724 a.n Helmi Amirudin</strong></p>
-	<p class="text-center mx-auto tcolor">Atau gunakan <a class="tcolor" href="https://shp.ee/cc8g5mt" aria-label="paypal-helmiau"><strong>tautan ini</strong></a> untuk membuka aplikasi Shopee.</p>
-	-->
+	<p class="text-center mx-auto tcolor">Or use this <a class="tcolor" href="https://wsa.wallet.airpay.co.id/qr/00e1ba1521b95ee97c90?smtt=0.0.9" aria-label="paypal-helmiau"><strong>ShopeePay Link</strong></a> to directly open Shopee app.</p>
 	</div>
 	<div class="modal-footer">
 		<button class="btn btn-primary" type="button" onclick="SalinAku('085852222724')">Copy Number</button>
-		<button class="btn btn-primary" type="button" onclick="window.open('https://shp.ee/cc8g5mt','_blank')">Open Shopee</button>
+		<button class="btn btn-primary" type="button" onclick="window.open('https://wsa.wallet.airpay.co.id/qr/00e1ba1521b95ee97c90?smtt=0.0.9','_blank')">Open Shopee</button>
 		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
 	</div>
 	</div>
@@ -292,9 +290,7 @@
 	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via Paypal</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
 	<div class="modal-body">
 	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="d-flex d-sm-flex w-75 h-75" src="assets/img/qr-paypal.svg"></div>
-	<!--
-	<p class="text-center mx-auto">Atau kirim donasi ke akun Paypal <a class="tcolor" href="https://paypal.me/helmiau" aria-label="paypal-helmiau"><strong>Helmi Amirudin</strong></a>.</p>
-	-->
+	<p class="text-center mx-auto">Or pay using <a class="tcolor" href="https://paypal.me/helmiau" aria-label="paypal-helmiau"><strong>Paypal Helmi Amirudin</strong></a> url.</p>
 	</div>
 	<div class="modal-footer">
 		<button class="btn btn-primary" type="button" onclick="window.open('https://paypal.me/helmiau','_blank')">Open PayPal</button>
@@ -303,8 +299,25 @@
 	</div>
 	</div>
 </div>
+<div class="modal fade" role="dialog" tabindex="-1" id="qr-flip">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h4 class="modal-title" style="font-size: 1.2em;"><strong>Payment Via Flip</strong></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+	<div class="modal-body">
+	<div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-center justify-content-sm-center justify-content-xl-center"><img class="d-flex d-sm-flex w-75 h-75" src="assets/img/qr-flip.svg"></div>
+	<p class="text-center mx-auto">Or pay using <a class="tcolor" href="https://flip.id/me/helmiamirudin" aria-label="flip-helmiau"><strong>flip.id Helmi Amirudin</strong></a> url.</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" type="button" onclick="window.open('https://flip.id/me/helmiamirudin','_blank')">Open Flip</button>
+		<button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+	</div>
+	</div>
+	</div>
+</div>
 <script src="assets/jquery.min.js"></script>
 <script src="assets/bootstrap.bundle.min.js"></script>
-<script src="assets/script.min_en.js"></script>
+<script src="assets/script.min.js"></script>
+<script src="assets/salin_en.js"></script>
 </body>
 </html>
